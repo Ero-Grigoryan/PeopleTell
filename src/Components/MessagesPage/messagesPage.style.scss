@@ -1,0 +1,97 @@
+.messages_page_cont {
+	animation: pageTransitionSecondary 1s;
+	background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+	min-height: 100vh;
+
+	.messages_page_messages_cont {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 600px;
+		max-height: 550px;
+		min-height: 100vh;
+		background-color: #ebedee;
+		padding: 1em 0;
+		width: 100%;
+
+		.messages_cont_my_chats_heading_cont {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.messages_page_go_back_arrow_cont {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-right: 1em;
+
+				svg {
+					scale: 1.5;
+					color: #474747;
+					-webkit-user-drag: none;
+					-webkit-user-select: none;
+					user-select: none;
+					transition: 0.35s;
+					cursor: pointer;
+
+					&:hover {
+						scale: 1.3;
+					}
+				}
+			}
+
+			.messages_page_heading_cont {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				h2 {
+					font-family: var(--my-font-family-main);
+					font-weight: 700;
+					font-size: 25px;
+					color: #474747;
+					-webkit-user-drag: none;
+					-webkit-user-select: none;
+					user-select: none;
+				}
+			}
+		}
+
+		.messages_page_users_cont {
+			display: flex;
+			flex-direction: column;
+			row-gap: 1em;
+			padding: 2em;
+			overflow-y: scroll;
+			width: 100%;
+			height: 100%;
+
+			&::-webkit-scrollbar {
+				max-width: 5px;
+				scroll-behavior: smooth;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				background-color: #8383fcc1;
+				border-radius: 50px;
+			}
+
+			.no_messages_container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-top: 2em;
+
+				h2 {
+					font-family: var(--my-font-family-main);
+					font-weight: 500;
+					font-size: 20px;
+					color: #4f4f4f;
+					-webkit-user-drag: none;
+					-webkit-user-select: none;
+					user-select: none;
+				}
+			}
+		}
+	}
+}

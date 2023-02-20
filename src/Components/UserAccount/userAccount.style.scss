@@ -1,0 +1,49 @@
+.user_account_cont {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 0.5em;
+	background-color: #ebebeb;
+	padding: 1em;
+	border-radius: 15px;
+	transition: 0.35s;
+	min-width: 200px;
+	cursor: pointer;
+
+	.user_account_avatar_cont {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 20%;
+
+		img {
+			-webkit-user-drag: none;
+			-webkit-user-select: none;
+			user-select: none;
+			max-width: 40px;
+			max-height: 40px;
+			border-radius: 50px;
+			aspect-ratio: 1/1;
+		}
+	}
+
+	.user_account_name_cont {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+
+		span {
+			font-family: var(--my-font-family-main);
+			font-weight: 500;
+			font-size: 16px;
+			-webkit-user-drag: none;
+			-webkit-user-select: none;
+			user-select: none;
+		}
+	}
+
+	&:hover {
+		box-shadow: 2px 2px 15px #dbdada;
+	}
+}

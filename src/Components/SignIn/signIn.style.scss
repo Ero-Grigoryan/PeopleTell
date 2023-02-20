@@ -1,0 +1,264 @@
+.signIn_container {
+	height: 100vh;
+	animation: pageTransitionSecondary 1s ease-in-out;
+
+	.signIn_top_container {
+		display: flex;
+		align-items: center;
+		-webkit-user-select: none;
+		user-select: none;
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 1.5em;
+
+		header {
+			padding: 1em 0;
+
+			a {
+				-webkit-user-drag: none;
+				-webkit-user-select: none;
+				user-select: none;
+				text-decoration: none;
+
+				h1 {
+					font-family: var(--my-font-family-secondary);
+					font-weight: 600;
+					font-size: clamp(20px, 6vw, 35px);
+					color: var(--my-color-black);
+				}
+			}
+		}
+	}
+
+	.signIn_bottom_container {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 90%;
+		margin: 0 auto;
+		column-gap: 2em;
+		min-height: 75vh;
+
+		.signIn_bottom_left_cont {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			row-gap: 1em;
+			-webkit-user-select: none;
+			user-select: none;
+
+			.signIn_bottom_left_top_cont {
+				display: flex;
+				flex-direction: column;
+
+				span {
+					font-family: var(--my-font-family-main);
+					font-weight: 500;
+					font-size: clamp(30px, 5vw, 40px);
+					color: var(--my-color-black);
+				}
+
+				span {
+					strong {
+						font-family: var(--my-font-family-secondary);
+						font-weight: 500;
+						font-size: clamp(30px, 5vw, 40px);
+						color: var(--my-color-black);
+					}
+				}
+			}
+
+			.signIn_bottom_left_signUp_cont {
+				display: flex;
+				flex-direction: column;
+
+				span {
+					font-family: var(--my-font-family-main);
+					font-weight: 400;
+					font-size: clamp(18px, 2vw, 20px);
+					color: var(--my-color-black);
+
+					a {
+						text-decoration: none;
+						color: #4d47c3;
+						-webkit-user-drag: none;
+					}
+				}
+			}
+
+			.signIn_bottom_left_image_container {
+				display: flex;
+				justify-content: start;
+				align-items: center;
+				-webkit-user-select: none;
+				user-select: none;
+
+				img {
+					-webkit-user-drag: none;
+					width: 80%;
+				}
+			}
+		}
+
+		.signIn_bottom_right_cont {
+			margin-top: 2em;
+
+			.signIn_right_top_cont {
+				-webkit-user-select: none;
+				user-select: none;
+
+				h2 {
+					font-family: var(--my-font-family-main);
+					font-weight: 700;
+					font-size: clamp(25px, 5vw, 40px);
+				}
+			}
+
+			.signIn_middle_cont {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-top: 1em;
+
+				form {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+
+					.signIn_error_cont {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						margin-top: 1em;
+						-webkit-user-drag: none;
+						-webkit-user-select: none;
+						user-select: none;
+						animation: errorAnimation 2s ease-in-out;
+
+						span {
+							font-family: var(--my-font-family-main);
+							font-weight: 500;
+							font-size: 15px;
+							color: #ff2a2ae7;
+						}
+					}
+
+					.forgot_password_cont {
+						display: flex;
+						justify-content: end;
+						align-items: center;
+						margin: 1em 0;
+						-webkit-user-select: none;
+						user-select: none;
+
+						span {
+							font-family: var(--my-font-family-main);
+							font-weight: 500;
+							font-size: 12px;
+							color: var(--my-color-black);
+							transition: 0.35s;
+							cursor: pointer;
+
+							&:hover {
+								text-shadow: 5px 5px 5px rgb(115, 0, 255);
+							}
+						}
+					}
+
+					input {
+						font-family: var(--my-font-family-main);
+						font-weight: 500;
+						font-size: 15px;
+						background-color: #f0efff;
+						padding: 1em 2em;
+						margin-top: 1em;
+						border: none;
+						overflow: hidden;
+						color: var(--my-color-black);
+						outline: none;
+						border-radius: 8px;
+						transition: 0.45s;
+
+						&:focus {
+							background-color: #9994ff;
+							color: #ffffff;
+							box-shadow: 0px 4px 61px rgba(77, 71, 195, 0.4);
+
+							&::placeholder {
+								color: #ffffff;
+							}
+						}
+
+						&:last-of-type {
+							-webkit-user-select: none;
+							user-select: none;
+							background: #4d47c3;
+							box-shadow: 0px 4px 61px rgba(77, 71, 195, 0.4);
+							border-radius: 9px;
+							color: #ffffff;
+							transition: 0.35s;
+							cursor: pointer;
+
+							&:hover {
+								scale: 0.98;
+								box-shadow: 0px 4px 61px rgba(13, 0, 255, 0.4);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 590px) {
+	.signIn_container {
+		.signIn_bottom_container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			.signIn_bottom_left_cont {
+				.signIn_bottom_left_top_cont {
+					span {
+						font-size: 24px;
+					}
+
+					span {
+						strong {
+							font-size: 24px;
+						}
+					}
+				}
+
+				.signIn_bottom_left_signUp_cont {
+					span {
+						font-size: 15px;
+					}
+				}
+
+				.signIn_bottom_left_image_container {
+					display: none;
+				}
+			}
+
+			.signIn_bottom_right_cont {
+				.signIn_right_top_cont {
+					h2 {
+						font-size: 20px;
+					}
+				}
+
+				.signIn_middle_cont {
+					form {
+						input {
+							font-size: 15px;
+							padding: 1em;
+						}
+					}
+				}
+			}
+		}
+	}
+}

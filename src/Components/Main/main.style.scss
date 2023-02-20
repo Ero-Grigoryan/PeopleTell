@@ -1,0 +1,29 @@
+.main_top_cont {
+	display: flex;
+	row-gap: 55%;
+	flex-direction: column;
+	background-image: url("../../Assets/Images/MainTopBackground/TopBackground.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+
+	.mtc_middle_text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 0 1em;
+		-webkit-user-drag: none;
+		-webkit-user-select: none;
+		user-select: none;
+
+		h2 {
+			font-family: var(--my-font-family-main);
+			font-weight: 700;
+			font-size: clamp(10px, 3.9vw, 25px);
+			color: #ffffff;
+			animation: mainTextIntro 3s ease-in-out;
+		}
+	}
+}

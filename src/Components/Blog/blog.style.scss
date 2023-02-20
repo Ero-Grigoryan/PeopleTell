@@ -1,0 +1,108 @@
+.blog_page_container {
+	animation: pageTransitionSecondary 1s;
+	background-color: #fcfafa;
+	min-height: 100vh;
+
+	.blog_page_header_cont {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		header {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 2em;
+
+			hr {
+				width: 20vw;
+				height: 4px;
+				margin: 0 2em;
+				background-color: red;
+			}
+
+			a {
+				-webkit-user-drag: none;
+				-webkit-user-select: none;
+				user-select: none;
+				text-decoration: none;
+
+				h1 {
+					font-family: var(--my-font-family-secondary);
+					font-weight: 600;
+					font-size: clamp(18px, 6vw, 35px);
+					color: var(--my-color-black);
+					border: 2px solid #000000;
+					padding: 0.4em 1em;
+					transition: 0.35s;
+
+					&:hover {
+						box-shadow: -10px -10px 15px #656565;
+					}
+				}
+			}
+		}
+	}
+
+	.blog_page_main_cont {
+		.blog_page_heading_cont {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			h2 {
+				-webkit-user-drag: none;
+				-webkit-user-select: none;
+				user-select: none;
+				font-family: var(--my-font-family-main);
+				font-weight: 600;
+				font-size: clamp(15px, 6vw, 30px);
+				color: var(--my-color-black);
+			}
+		}
+
+		main {
+			.blog_main_pre_heading_cont {
+				display: flex;
+				padding: 2em;
+				margin-top: 1em;
+
+				h3 {
+					-webkit-user-drag: none;
+					-webkit-user-select: none;
+					user-select: none;
+					font-family: var(--my-font-family-main);
+					font-weight: 600;
+					font-size: clamp(14px, 5vw, 25px);
+					color: var(--my-color-black);
+				}
+			}
+
+			.blog_main_posts_cont {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				row-gap: 2em;
+				width: 100%;
+
+				.blog_page_no_posts_container {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-top: 2em;
+
+					h2 {
+						font-family: var(--my-font-family-main);
+						font-weight: 500;
+						font-size: 20px;
+						color: #4f4f4f;
+						-webkit-user-drag: none;
+						-webkit-user-select: none;
+						user-select: none;
+					}
+				}
+			}
+		}
+	}
+}

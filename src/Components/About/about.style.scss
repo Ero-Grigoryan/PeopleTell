@@ -1,0 +1,110 @@
+.about_page_container {
+	animation: pageTransitionSecondary 1s;
+
+	.about_page_header_cont {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		header {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 2em 0;
+			-webkit-user-drag: none;
+			-webkit-user-select: none;
+			user-select: none;
+
+			a {
+				-webkit-user-drag: none;
+				-webkit-user-select: none;
+				user-select: none;
+				text-decoration: none;
+
+				h1 {
+					font-family: var(--my-font-family-secondary);
+					font-weight: 600;
+					font-size: clamp(18px, 6vw, 35px);
+					color: var(--my-color-black);
+					border: 2px solid #000000;
+					padding: 0.4em 1em;
+					transition: 0.35s;
+
+					&:hover {
+						box-shadow: -10px -10px 15px #656565;
+					}
+				}
+			}
+		}
+	}
+
+	.about_page_main_cont {
+		main {
+			.about_page_main_heading_cont {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-top: 2em;
+				-webkit-user-drag: none;
+				-webkit-user-select: none;
+				user-select: none;
+
+				h2 {
+					font-family: var(--my-font-family-main);
+					font-weight: 500;
+					font-size: clamp(20px, 6vw, 30px);
+					color: var(--my-color-black);
+				}
+			}
+
+			.about_page_main_content_cont {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 2em auto;
+				width: 90%;
+				-webkit-user-drag: none;
+				-webkit-user-select: none;
+				user-select: none;
+
+				p {
+					font-family: var(--my-font-family-main);
+					font-weight: 400;
+					font-size: clamp(13px, 4vw, 23px);
+					color: var(--my-color-black);
+				}
+
+				strong {
+					font-family: var(--my-font-family-secondary);
+					font-weight: 600;
+					font-size: clamp(15px, 4vw, 25px);
+					color: #4c4c4c;
+				}
+
+				svg {
+					-webkit-user-drag: none;
+					-webkit-user-select: none;
+					user-select: none;
+					margin-right: 1em;
+					color: #4c4c4c;
+					transition: 0.35s;
+					cursor: pointer;
+
+					&:hover {
+						scale: 0.9;
+					}
+				}
+
+				a {
+					-webkit-user-drag: none;
+					-webkit-user-select: none;
+					user-select: none;
+					font-family: var(--my-font-family-main);
+					font-weight: 400;
+					font-size: clamp(13px, 4vw, 25px);
+					color: #7b7bff;
+				}
+			}
+		}
+	}
+}

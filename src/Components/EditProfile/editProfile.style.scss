@@ -1,0 +1,226 @@
+.edit_profile_container {
+	min-height: 100vh;
+	animation: pageTransitionSecondary 1s ease-in;
+
+	.user_profile_edit_header_cont {
+		header {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			background-color: #fffffffb;
+			padding: 1.5em;
+			background-color: #1b1c1e;
+
+			.user_profile_edit_header_left_cont {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				-webkit-user-select: none;
+				user-select: none;
+
+				a {
+					text-decoration: none;
+
+					h1 {
+						font-family: var(--my-font-family-secondary);
+						font-weight: 600;
+						font-size: clamp(18px, 6vw, 35px);
+						color: #ffffff;
+					}
+				}
+			}
+		}
+	}
+
+	.user_profile_edit_top_cont {
+		display: flex;
+		flex-direction: column;
+		column-gap: 0.5em;
+		height: fit-content;
+
+		.user_top_avatar_cont {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 2em;
+
+			img {
+				-webkit-user-drag: none;
+				-webkit-user-select: none;
+				user-select: none;
+				max-width: 200px;
+				aspect-ratio: 1/1;
+				border: 5px solid #76a4ce;
+				border-radius: 100%;
+			}
+		}
+	}
+
+	.edit_profile_form_cont {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		form {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			.edit_err_cont {
+				display: flex;
+				justify-content: start;
+				align-items: center;
+				padding: 1em 0.2em;
+
+				span {
+					font-family: var(--my-font-family-main);
+					font-weight: 700;
+					font-size: 12px;
+					color: #4d47c3;
+					-webkit-user-select: none;
+					user-select: none;
+					text-shadow: 5px 2px 5px #ff2a2ae7;
+				}
+			}
+
+			input {
+				font-family: var(--my-font-family-main);
+				font-weight: 500;
+				font-size: 15px;
+				background-color: #f0efff;
+				padding: 1em 2em;
+				margin-top: 1em;
+				border: none;
+				overflow: hidden;
+				color: var(--my-color-black);
+				outline: none;
+				border-radius: 8px;
+				transition: 0.45s;
+
+				&:focus {
+					background-color: #9994ff;
+					color: #ffffff;
+					box-shadow: 0px 4px 61px rgba(77, 71, 195, 0.4);
+
+					&::placeholder {
+						color: #ffffff;
+					}
+				}
+
+				&:first-of-type {
+					background: none;
+					fill: yellow;
+					font-size: 0;
+
+					&::file-selector-button {
+						font-family: var(--my-font-family-main);
+						font-weight: 500;
+						font-size: 15px;
+						background-color: #f0efff;
+						padding: 1em 2em;
+						margin-top: 1em;
+						border: none;
+						overflow: hidden;
+						color: var(--my-color-black);
+						outline: none;
+						border-radius: 8px;
+						transition: 0.45s;
+						cursor: pointer;
+
+						&:hover {
+							scale: 0.98;
+							background-color: #9994ff;
+							color: #ffffff;
+						}
+					}
+				}
+
+				&:last-of-type {
+					-webkit-user-select: none;
+					user-select: none;
+					background: #4d47c3;
+					box-shadow: 0px 4px 61px rgba(77, 71, 195, 0.4);
+					border-radius: 9px;
+					color: #ffffff;
+					transition: 0.35s;
+					cursor: pointer;
+					margin-bottom: 1em;
+					min-width: 222px;
+					min-height: 40px;
+					padding: 0;
+					margin-top: 1em;
+
+					&:hover {
+						scale: 0.98;
+						box-shadow: 0px 4px 61px rgba(13, 0, 255, 0.4);
+					}
+				}
+			}
+		}
+	}
+
+	.edit_profile_cancel_button_cont {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 2em;
+
+		button {
+			font-family: var(--my-font-family-main);
+			font-weight: 500;
+			font-size: 15px;
+			border: none;
+			overflow: hidden;
+			outline: none;
+			min-width: 222px;
+			min-height: 40px;
+			margin-top: 0.5em;
+			background-color: #b74d4d;
+			color: #ffffff;
+			box-shadow: 0px 4px 61px rgba(77, 71, 195, 0.4);
+			border-radius: 9px;
+			-webkit-user-select: none;
+			user-select: none;
+			transition: 0.35s;
+			cursor: pointer;
+
+			&:hover {
+				scale: 0.98;
+				box-shadow: 0px 4px 20px #b74d4d;
+			}
+		}
+	}
+
+	.edit_profile_delete_account_button_cont {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 2em;
+
+		button {
+			font-family: var(--my-font-family-main);
+			font-weight: 500;
+			font-size: 15px;
+			border: none;
+			overflow: hidden;
+			outline: none;
+			min-width: 222px;
+			min-height: 40px;
+			margin-top: 0.5em;
+			background-color: #b74d4d;
+			color: #ffffff;
+			box-shadow: 0px 4px 61px rgba(77, 71, 195, 0.4);
+			border-radius: 9px;
+			-webkit-user-select: none;
+			user-select: none;
+			transition: 0.35s;
+			cursor: pointer;
+
+			&:hover {
+				scale: 0.98;
+				box-shadow: 0px 4px 20px #b74d4d;
+			}
+		}
+	}
+}
